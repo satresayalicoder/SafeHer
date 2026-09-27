@@ -1,0 +1,814 @@
+* {
+  box-sizing: border-box;
+}
+
+.sos-page {
+  min-height: 100vh;
+  background: #fafafa;
+  color: #222;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+.sos-header {
+  height: 78px;
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+
+.sos-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sos-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #e91e63;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sos-brand h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.sos-brand span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.back-dashboard {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-dashboard:hover {
+  color: #e91e63;
+}
+
+/* ======================================================
+   MAIN
+====================================================== */
+
+.sos-main {
+  width: min(1050px, 92%);
+  margin: auto;
+  padding: 55px 0;
+}
+
+.sos-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.sos-title > span {
+  color: #e91e63;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sos-title h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.sos-title p {
+  color: #777;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ======================================================
+   MAIN SOS CARD
+====================================================== */
+
+.sos-main-card {
+  background: white;
+  border-radius: 24px;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+}
+
+.sos-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 30px;
+  background: #f1fff5;
+  color: #278447;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #2eaf5d;
+  border-radius: 50%;
+}
+
+/* ======================================================
+   BIG SOS BUTTON
+====================================================== */
+
+.sos-circle-wrapper {
+  margin: 35px auto 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.big-sos-button {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 12px solid #ffe2eb;
+  background: #e91e63;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 0 0 18px #fff1f5,
+    0 15px 35px rgba(233, 30, 99, 0.3);
+
+  transition: 0.25s ease;
+}
+
+.big-sos-button:hover {
+  transform: scale(1.04);
+}
+
+.big-sos-button:active {
+  transform: scale(0.97);
+}
+
+.big-sos-button strong {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.big-sos-button span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.sos-main-card h2 {
+  margin: 20px 0 8px;
+}
+
+.sos-description {
+  color: #777;
+  max-width: 570px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.sos-warning {
+  margin: 25px auto 0;
+  display: inline-block;
+  background: #fff8e8;
+  color: #916b00;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* ======================================================
+   LOCATION
+====================================================== */
+
+.sos-info-card {
+  margin-top: 25px;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: #fff0f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content h3 {
+  margin: 0 0 5px;
+}
+
+.info-content p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.location-error {
+  display: block;
+  color: #d32f2f;
+  margin-top: 5px;
+}
+
+.location-button {
+  border: none;
+  background: #f5f5f5;
+  padding: 11px 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.location-button:hover {
+  background: #ffe8f0;
+  color: #e91e63;
+}
+
+/* ======================================================
+   CONTACTS
+====================================================== */
+
+.sos-contacts-card {
+  margin-top: 25px;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.section-heading > div span {
+  color: #e91e63;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  margin: 5px 0 0;
+}
+
+.section-heading a {
+  color: #e91e63;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sos-contact-list {
+  display: grid;
+  gap: 12px;
+}
+
+.sos-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+}
+
+.contact-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffe5ee;
+  color: #e91e63;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.contact-details strong {
+  font-size: 15px;
+}
+
+.contact-details span,
+.contact-details small {
+  color: #777;
+}
+
+.call-contact {
+  text-decoration: none;
+  color: #e91e63;
+  border: 1px solid #f2b6ca;
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.call-contact:hover {
+  background: #fff0f5;
+}
+
+.no-contacts {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+.no-contacts a {
+  color: #e91e63;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ======================================================
+   USER INFO
+====================================================== */
+
+.sos-user-info {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+
+/* ======================================================
+   SOS ACTIVE SCREEN
+====================================================== */
+
+.sos-active-page {
+  min-height: calc(100vh - 78px);
+  background: #fff5f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+}
+
+.sos-active-card {
+  width: min(650px, 100%);
+  background: white;
+  border-radius: 28px;
+  padding: 45px 35px;
+  text-align: center;
+
+  border: 1px solid #ffd6e2;
+
+  box-shadow:
+    0 20px 60px rgba(233, 30, 99, 0.12);
+}
+
+/* Active Icon */
+
+.sos-active-icon {
+  width: 105px;
+  height: 105px;
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  background: #e91e63;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  box-shadow:
+    0 0 0 14px #ffe6ef,
+    0 0 0 28px #fff1f5;
+
+  animation: sosPulse 1.8s infinite;
+}
+
+@keyframes sosPulse {
+  0% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 14px #ffe6ef,
+      0 0 0 28px #fff1f5;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 0 20px #ffe6ef,
+      0 0 0 38px #fff1f5;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 14px #ffe6ef,
+      0 0 0 28px #fff1f5;
+  }
+}
+
+/* Active Heading */
+
+.sos-active-card h1 {
+  font-size: 38px;
+  margin: 10px 0;
+  color: #e91e63;
+}
+
+.sos-active-card > p {
+  color: #666;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 30px;
+}
+
+/* Active Status */
+
+.active-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 17px;
+
+  border-radius: 30px;
+
+  background: #fff0f5;
+  color: #e91e63;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.active-status-dot {
+  width: 9px;
+  height: 9px;
+
+  background: #e91e63;
+  border-radius: 50%;
+
+  animation: statusBlink 1s infinite;
+}
+
+@keyframes statusBlink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ======================================================
+   ACTIVE SOS INFORMATION
+====================================================== */
+
+.sos-active-info {
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.active-info-box {
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+
+  padding: 18px;
+
+  background: #fafafa;
+  text-align: left;
+}
+
+.active-info-box span {
+  display: block;
+
+  font-size: 11px;
+  color: #999;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  margin-bottom: 7px;
+}
+
+.active-info-box strong {
+  display: block;
+
+  font-size: 14px;
+  color: #333;
+
+  word-break: break-word;
+}
+
+/* ======================================================
+   LOCATION BUTTON ON ACTIVE SCREEN
+====================================================== */
+
+.active-location {
+  margin-top: 18px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  background: #fff7fa;
+  border: 1px solid #ffdbe7;
+
+  text-align: left;
+}
+
+.active-location-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.active-location p {
+  margin: 0 0 12px;
+
+  color: #777;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.open-map-button {
+  display: inline-block;
+
+  text-decoration: none;
+
+  background: #e91e63;
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.open-map-button:hover {
+  background: #d81b5b;
+}
+
+/* ======================================================
+   RESOLVE SOS BUTTON
+====================================================== */
+
+.resolve-sos-button {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #222;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.resolve-sos-button:hover {
+  background: #000;
+  transform: translateY(-1px);
+}
+
+.resolve-sos-button:active {
+  transform: translateY(0);
+}
+
+/* ======================================================
+   ACTIVE USER INFO
+====================================================== */
+
+.sos-active-user {
+  margin-top: 22px;
+
+  color: #999;
+
+  font-size: 12px;
+}
+
+/* ======================================================
+   MODAL
+====================================================== */
+
+.sos-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 9999;
+}
+
+.sos-modal {
+  width: min(430px, 100%);
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-icon {
+  font-size: 40px;
+}
+
+.sos-modal h2 {
+  margin: 15px 0 10px;
+}
+
+.sos-modal p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.modal-buttons button {
+  flex: 1;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.cancel-sos {
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.cancel-sos:hover {
+  background: #f7f7f7;
+}
+
+.confirm-sos {
+  border: none;
+  background: #e91e63;
+  color: white;
+}
+
+.confirm-sos:hover {
+  background: #d81b5b;
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 650px) {
+
+  .sos-header {
+    padding: 0 20px;
+  }
+
+  .sos-main {
+    padding: 35px 0;
+  }
+
+  .sos-title h1 {
+    font-size: 32px;
+  }
+
+  .sos-info-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .location-button {
+    width: 100%;
+  }
+
+  .sos-contact {
+    align-items: flex-start;
+  }
+
+  .call-contact {
+    padding: 8px 10px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  /* Active SOS mobile */
+
+  .sos-active-page {
+    padding: 30px 15px;
+  }
+
+  .sos-active-card {
+    padding: 35px 20px;
+    border-radius: 22px;
+  }
+
+  .sos-active-card h1 {
+    font-size: 30px;
+  }
+
+  .sos-active-info {
+    grid-template-columns: 1fr;
+  }
+
+  .sos-active-icon {
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+  }
+}
